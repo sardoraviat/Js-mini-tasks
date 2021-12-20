@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="css/burj.css">
+</head>
+<body>
+
+
+
+    <div class="input">
+        <h1>Burjingizni bilasizmi?</h1>
+        <div class="input2">
+            <input type="text" id="input" placeholder="Tug'ilgan oyingiz" >
+            <input type="text" id="input2" placeholder="Tug'ilgan kuningiz ">
+            <button onclick="myFunction()" class="button">Bilib olish</button>
+            <p id="javob"></p>
+        </div>
+
+    </div>
+
+
+</body>
+<script>
+    function myFunction() {
+
+        let oy;
+        let kun;
+
+        oy = document.getElementById("input").value;
+        kun = document.getElementById("input2").value;
+        if((oy==="yanvar" && kun>=21) || (oy==="fevral" && kun<=20)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Dalv";
+        }
+        if((oy==="fevral" && kun>=21) || (oy==="mart" && kun<=20)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Baliq";
+        }
+        if((oy==="mart" && kun>=21) || (oy==="aprel" && kun<=20)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Qo'y";
+        }
+        if((oy==="aprel" && kun>=21) || (oy==="may" && kun<=21)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Buzoq";
+        }
+        if((oy==="may" && kun>=22) || (oy==="iyun" && kun<=21)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Egizaklar";
+        }
+        if((oy==="iyun" && kun>=22) || (oy==="iyul" && kun<=22)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Qisqichbaqa";
+        }
+        if((oy==="iyul" && kun>=23) || (oy==="avgust" && kun<=23)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Arslon";
+        }
+        if((oy==="avgust" && kun>=24) || (oy==="sentabr" && kun<=24)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Sunbula";
+        }
+        if((oy==="sentabr" && kun>=24) || (oy==="oktabr" && kun<=23)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Tarozu";
+        }
+        if((oy==="oktabr" && kun>=24) || (oy==="noyabr" && kun<=22)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Chayon";
+        }
+        if((oy==="noyabr" && kun>=23) || (oy==="dekabr" && kun<=21)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Qavs";
+        }
+        if((oy==="dekabr" && kun>=22) || (oy==="yanvar" && kun<=20)){
+            document.getElementById('javob').innerHTML = "Sizning burjingiz Tog' echkisi";
+        }
+
+        else if (kun>31){
+            document.getElementById('javob').innerHTML = "Xato kiritdingiz";
+        }
+
+
+    }
+
+</script>
+</html>

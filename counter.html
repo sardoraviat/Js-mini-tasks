@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counter</title>
+</head>
+<body>
+    <div class="counter">
+        <div class="number" id="counter-placeholder">0</div>
+        <button class="count-btn" id="counter-plus">Plus</button>
+        <button class="count-btn" id="count-minus">Minus</button>
+    </div>
+
+
+
+
+
+</body>
+<script>
+    var counterPlaceholder = document.getElementById("counter-placeholder");
+    var counterPlus = document.getElementById("counter-plus");
+    var counterMinus = document.getElementById("count-minus");
+    var number = 0;
+    
+    function changeColor(mumber) {
+        var color = "";
+        if (number < 0){
+            color = "red";
+        }
+        else if (number > 0 ){
+            color = "green";
+        }
+        else{
+            color = "white";
+        }
+         return color;
+    }
+    counterPlus.addEventListener("click", function () {
+      number++;
+      counterPlaceholder.innerHTML = number;
+      counterPlaceholder.style.color = changeColor()
+        
+    });
+    counterMinus.addEventListener("click",function (){
+        number--;
+        counterPlaceholder.innerHTML = number;
+        counterPlaceholder.style.color = changeColor()
+    });
+</script>
+</html>

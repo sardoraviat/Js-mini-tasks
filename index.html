@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java script</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+<!--    <p id="demo2">JavaScript can change HTML content.</p>-->
+
+<!--    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>-->
+<!--</div>-->
+
+
+<!--<p id="demo">JavaScript can change the style of an HTML element.</p>-->
+
+<!--<button type="button" id="click_btn">Click Me!</button>-->
+
+
+<!--<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>-->
+
+<!--<p id="demo"></p>-->
+
+    <p id="printhere"></p>
+    Name : <input type="text" id="userName">
+
+    <button  onclick="display()">Add Info</button>
+
+
+
+
+
+</body>
+<script>
+    function display(){
+
+//Assigning the variable to the user input
+        var userName = document.getElementById("userName").value;
+
+// to print the input here
+        document.getElementById("printhere").innerHTML = userName;
+    }
+</script>
+
+</html>

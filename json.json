@@ -1,0 +1,59 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "name": "vegetable",
+      "products": {
+        "id": 1,
+        "name": "Carrot",
+        "provider": {
+          "id": 1,
+          "name": "",
+          "phone": "+998901234567",
+          "address": {
+            "name": "America, Chicago n/34",
+            "zip": 541634
+          }
+        },
+        "from": {
+          "name": "Asia",
+          "currency": {
+            "name": [
+              "UZS",
+              "USD",
+              "KZS",
+              "KGS"
+            ]
+          },
+          "location": {
+            "latitude": "45.21351541",
+            "longitude": "71.21351541"
+          }
+        },
+        "attribute": {
+          "color": [
+            "red",
+            "yellow"
+          ],
+          "type": "circle"
+        },
+        "image": {
+          "main_pictures": {
+            "url": "https://www.google.com/"
+          },
+          "variation_pictures": [
+            {
+              "url": "https://www.google.com/"
+            },
+            {
+              "url": "https://www.google.com/"
+            },
+            {
+              "url": "https://www.google.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

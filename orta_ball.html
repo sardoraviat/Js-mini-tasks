@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talaba zachot ballini aniqlash </title>
+    <link rel="stylesheet" href="css/orta_ball.css">
+</head>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<body>
+
+
+
+<div class="input">
+    <h1>O'quvchining barcha fanlardan o'rtacha o'zlashtirish ko'rsatkichi </h1>
+    <div class="input2">
+        <input id="input1" placeholder="Matematika" type="text">
+        <input type="text" id="input2" placeholder="Fizika">
+        <input type="text" id="input3" placeholder="Ona tili">
+        <input type="text" id="input4" placeholder="Adabiyot">
+        <input type="text" id="input5" placeholder="Ingliz tili">
+        <input type="text" id="input6" placeholder="Rus tili">
+        <input type="text" id="input7" placeholder="Informatika">
+        <input type="text" id="input8" placeholder="Kimyo">
+        <input type="text" id="input9" placeholder="Biologiya">
+        <input type="text" id="input10" placeholder="Tarix">
+
+        <button onclick="myFunction()" class="button">Bilib olish</button>
+        <p id="javob"></p>
+    </div>
+
+</div>
+</body>
+<script>
+    function myFunction() {
+        let summa;
+        let natija;
+        summa = +document.getElementById('input1').value + +document.getElementById('input2').value +
+            +document.getElementById('input3').value + +document.getElementById('input4').value +
+            +document.getElementById('input5').value + +document.getElementById('input6').value +
+            +document.getElementById('input7').value + +document.getElementById('input8').value +
+            +document.getElementById('input9').value + +document.getElementById('input10').value ;
+        natija= summa/10;
+        if (natija <= 55){
+            console.log('qoniqarsiz')
+
+            Swal.fire({
+                title: natija,
+                text: 'Sizning natijangiz qoniqarsiz!',
+                imageUrl: 'images/qoniqarsiz.jpg',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+        }
+        if((natija >=56) && (natija <=70) ){
+            console.log('qoniqarli')
+
+            Swal.fire({
+                title: natija,
+                text: 'Sizning natijangiz qoniqarli!',
+                imageUrl: 'images/qoniqarli.jpg',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+        }
+        if((natija >=71) && (natija <=85) ){
+            console.log('yaxshi')
+
+            Swal.fire({
+                title: natija,
+                text: 'Sizning natijangiz yaxshi!',
+                imageUrl: 'images/yaxshi.png',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+        }
+        if((natija >=86) && (natija <=100) ){
+            console.log('a\'lo')
+            Swal.fire({
+                title: natija,
+                text: 'Sizning natijangiz a\'lo',
+                imageUrl: 'images/good.png',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+        }
+
+
+        console.log(natija);
+
+    }
+</script>
+</html>

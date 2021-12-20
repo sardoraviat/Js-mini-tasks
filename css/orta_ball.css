@@ -1,0 +1,34 @@
+
+input{
+    border: none;
+    outline: none;
+}
+.input2{
+    text-align: center;
+}
+
+.input2 input{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 25px;
+    margin: 25px;
+}
+.input h1{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.input2 button{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #13a113;
+    color: white;
+    background: #13a113;
+    border-radius: 25px;
+}
+.button:hover{
+    cursor: pointer;
+}

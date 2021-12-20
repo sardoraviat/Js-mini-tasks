@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logika</title>
+    <link rel="stylesheet" href="css/logika.css">
+</head>
+<body>
+
+        <div class="input">
+            <h1>Logika bu-EVRIKA</h1>
+
+            <div class="input2">
+                <p>Ikki son kiriting va ularni qay biri katta ekanligini bilib oling</p>
+                <label><input type="text" id="input" placeholder="Number" ></label>
+                <label> <input type="text" id="input2" placeholder="Number"></label>
+                <button onclick="myFunction()" class="button">Bilib olish</button>
+                <p id="javob"></p>
+            </div>
+
+        </div>
+</body>
+<script>
+    function myFunction() {
+
+        let number  =+ document.getElementById('input').value;
+        let number2 =+ document.getElementById('input2').value;
+
+        if(number>number2){
+            document.getElementById('javob').innerHTML=number;
+        }
+        else{
+            document.getElementById('javob').innerHTML=number2;
+        }
+
+    }
+</script>
+</html>

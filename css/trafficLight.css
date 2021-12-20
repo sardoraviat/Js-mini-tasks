@@ -1,0 +1,42 @@
+#red{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 3px 0;
+}
+
+#yellow{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 3px 0;
+}
+#green{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 3px 0;
+}
+.bg-info{
+
+    margin: 0 auto;
+    width: 100px;
+    height: 260px;
+    border-radius: 10px;
+}
+.center{
+    margin: 0 auto;
+
+}
+.circle{
+    background-color: #212020;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}

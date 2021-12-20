@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+  <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+  <div class="container">
+      <div class="calc">
+          <div class="row" style="margin: 15px auto">
+<!--              <div class="screen">-->
+              <label>
+                  <input type="text" class="screen" id="input" >
+              </label>
+          </div>
+          <div class="row">
+              <span class="circle"><p>C</p></span>
+              <span class="circle"><p id="persent">%</p></span>
+              <div class="circle"><p id="clear" style="cursor: pointer">Del</p></div>
+              <span class="circle orange"><p id="drop">/</p></span>
+          </div>
+          <div class="row">
+              <span class="circle"><p id="seven">7</p></span>
+              <span class="circle"><p id="eight">8</p></span>
+              <span class="circle"><p id="nine">9</p></span>
+              <span class="circle orange"><p id="star">*</p></span>
+          </div>
+          <div class="row">
+              <span class="circle"><p id="four">4</p></span>
+              <span class="circle"><p id="five">5</p></span>
+              <span class="circle"><p id="six">6</p></span>
+              <span class="circle orange"><p id="minus">-</p></span>
+          </div>
+          <div class="row">
+              <span class="circle" ><p id="one">1</p></span>
+              <span class="circle" ><p id="two">2</p></span>
+              <span class="circle"><p id="three">3</p></span>
+              <span class="circle orange"><p id="plus">+</p></span>
+          </div>
+          <div class="row">
+              <span class="circle"><p id="zero">0</p></span>
+              <span class="circle"><p id="point">.</p></span>
+              <span class="circle"><p id="00">00</p></span>
+              <span class="circle orange"><p id="equal">=</p></span>
+          </div>
+      </div>
+  </div>
+</body>
+<script>
+    let ekran = document.querySelector('.screen');
+    let clear = document.getElementById('clear');
+    let input = document.getElementById("input")
+    document.addEventListener('keypress', (e) => {
+        console.log(e.key)
+        if (e.key === 'Enter'){
+            ekran.value = eval(ekran.value);
+        }
+        else {input.value += e.key}
+
+        if (e.key == 'Backspace'){
+            ekran.value = ekran.value.slice(0, -1);
+        }
+    });
+
+
+    clear.onclick = function () {
+        ekran.value = ekran.value.slice(0, -1);
+    }
+    document.querySelectorAll('span').forEach(function (span){
+        span.addEventListener('click',function (d){
+            let belgi = d.target.innerText;
+
+            if (belgi== "C"){
+                ekran.value = "";
+            } else if (belgi == "="){
+               ekran.value = eval(ekran.value);
+            } else {
+                ekran.value += belgi;
+            }
+
+        });
+
+    });
+
+
+</script>
+</html>

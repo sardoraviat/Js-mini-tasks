@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON o'rganamiz</title>
+</head>
+<body>
+<div id="image_url_1"></div>
+<div id="image_url_2"></div>
+
+</body>
+<script type="text/javascript">
+   let sorov =new  XMLHttpRequest();
+   sorov.open('get','json.json');
+   sorov.send();
+   sorov.onload = function (){
+        let obj = JSON.parse(sorov.responseText);
+
+
+   }
+
+    data.articles.forEach( function(obj) {
+        var img = new Image();
+        img.src = obj.products.image.variation_pictures.forEach(item => console.log(item));
+        document.getElementById("image_url_1").innerHTML=data.articles[1].image_url;
+    });
+
+
+</script>
+</html>

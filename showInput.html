@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Input</title>
+</head>
+<body>
+<p>Input: <input type="text" name="kirish" id="input"></p>
+<p>Output: <input type="text" name="chiqish" id="output"></p>
+
+</body>
+<script>
+    let kirish = document.getElementById("input")
+    let chiqish = document.getElementById("output")
+    document.addEventListener('keypress', (event) => {
+        output.value += event.key
+    });
+</script>
+</html>

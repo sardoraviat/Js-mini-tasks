@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raffic Light</title>
+    <link rel="stylesheet" href="css/trafficLight.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+
+    </style>
+</head>
+<body onload="timer;">
+    <div class="container " >
+        <div class="bg-info mt-5 d-flex ">
+           <div class="center  ">
+               <div class="red"     id="red" onclick="changeBack(this)"></div>
+               <div class="yellow"  id="yellow" onclick="changeBack(this)"></div>
+               <div  class="green"  id="green" onclick="changeBack(this)" ></div>
+           </div>
+        </div>
+    </div>
+</body>
+<script>
+    function changeBack(e) {
+        if (e.id === "red"){
+            e.style.background = "red"
+            document.getElementById('green').style.background = "#1b1e21";
+            document.getElementById('yellow').style.background = "#1b1e21";
+        }
+        else if (e.id === "yellow"){
+            e.style.background = "yellow"
+        }
+        else {
+            e.style.background = "green";
+            document.getElementById('red').style.background = "#1b1e21";
+            document.getElementById('yellow').style.background = "#1b1e21";
+        }
+    }
+
+    // let red = document.getElementsByClassName("red");
+    // let yellow = document.getElementsByClassName("yellow");
+    // let green = document.getElementsByClassName("green");
+    //     green.style.opacity=1;
+    //     function timeTraffic(){
+    //         setTimeout(function (){
+    //            green.style.opacity=0;
+    //            red.style.opacity=0;
+    //            yellow.style.opacity=1;
+    //         },7000);
+    //         green.style.opacity=1;
+    //         setTimeout(function () {
+    //             /* body... */
+    //             green.style.opacity=.3;
+    //             red.style.opacity=.3;
+    //             yellow.style.opacity=1;
+    //         },5000);
+    //
+    //         setTimeout(function () {
+    //             /* body... */
+    //             green.style.opacity=.3;
+    //             red.style.opacity=1;
+    //             yellow.style.opacity=.3;
+    //         },7000);
+    //
+    //         setTimeout(function () {
+    //             /* body... */
+    //             green.style.opacity=1;
+    //             red.style.opacity=.3;
+    //             yellow.style.opacity=.3;
+    //         },12000);
+    //
+    //
+    //     }
+    //      // setTimeout(function (){
+            //     document.getElementById("red").style.background = "red";
+            // },3000);
+
+
+
+</script>
+</html>

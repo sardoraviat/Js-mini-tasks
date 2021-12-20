@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js project 1</title>
+</head>
+<body>
+    <div>
+<!--        <p>Ismingiz: <b id="ism"></b></p>-->
+<!--        <p>Familyangiz: <b id="familya"></b> </p>-->
+        <p>Ismingiz: <span id="ism"></span></p>
+        <p>Familyangiz <span id="familiya"></span></p>
+        <p>Uzunlik: <span id="uzunlik"></span></p>
+
+    </div>
+    <div>
+            <input type="text" id="inpt" required>
+            <button type="submit" onclick="display()">Ism</button>
+            <button type="submit" onclick="display2()">Familiya</button>
+
+    </div>
+</body>
+<script>
+
+    { document.getElementById("uzunlik").innerHTML = document.getElementById("ism").length;
+     }
+
+    function display() {
+        document.getElementById("ism").innerHTML = document.getElementById("inpt").value;
+
+    }
+    function display2() {
+        document.getElementById("familiya").innerHTML = document.getElementById("inpt").value;
+    }
+</script>
+</html>

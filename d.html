@@ -1,0 +1,42 @@
+<html>
+<meta charset="UTF-8">
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <title>Sample Array</title>
+  <script>var index = 0;</script>
+</head>
+
+<body>
+
+
+Input:
+<input type="text" id="input" />
+<input type="button" value="GO" onClick="press(input.value)"/>
+<input type="button" value="Clean" onClick="$('#display').html('');"/>
+<p id = "display"></p>
+<script>
+
+  var sample = new Array();
+
+  function press(Number)
+  {
+
+    if ( Number != '' )
+    {
+      sample[index] = Number;
+      document.getElementById("display").innerHTML += sample[index] + "<br>";
+      index++;
+
+    }
+
+    else
+      alert("empty");
+
+    document.getElementById('input').value = '';
+  }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    width: 1200px;
+}
+.row{
+    display: flex;
+}
+.inputd{
+    color: white;
+    font-family: "Cooper Black";
+    font-size: 45px;
+    text-align: center;
+    border: none;
+    background: #31a731;
+    width: 350px;
+    height: 55px;
+    outline: none;
+    border-radius: 25px;
+}
+.col-6{
+
+    margin-top: 100px;
+    text-align: center;
+     width: 50%;
+}
+.col-6 ul li{
+    text-align: center;
+
+}
+
+.col-6 ul {
+
+
+}

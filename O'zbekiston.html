@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O'zbekiston</title>
+    <link rel="stylesheet" href="css/o'zbekiston.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-6">
+            <h2>Davlatni tanlang!</h2>
+            <div>
+
+                <input type="text" onkeyup="searchRegion(this)" class="inputd" id="input">
+            </div>
+        </div>
+        <div class="col-6">
+            <h2>Viloyatlar / Regions</h2>
+            <ul id="list" style="list-style: none;">
+
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+
+    const  cities_UK = ["London" , "Munchester city" , "Munchester united" , "Liverpool" , "Birmingem" ,"West-ham" , "Leister"];
+
+    const  cities_USA = ["Malibu" , "Orlando" , "Santiego" , "Los-Angelos" , "Washinngton" ,"Boston" , "New York" ,"Californiya"]
+
+
+    const COUNTRIES = [
+        {"name": "Uzbekistan", "regions": [
+            "Andijon" , "Buhoro" , "Farg'ona" , "Jizzah" , "Navoiy" ,"Namangan" , "Qashqadaryo" ,"Samarqand",
+            "Sirdaryo" , "Surxondaryo" , "Toshkent"
+            ]
+        },
+        {"name": "Kazakhstan", "regions": ["Astana" , "Almata" , "Chimkent"]},
+        {}
+    ]
+
+    let add ;
+    function searchRegion(country) {
+        for (let i = 0; i < COUNTRIES.length; i++) {
+            let items = COUNTRIES[i]
+            if (country.value  === items.name) {
+                let regions = items.regions
+                for(let a = 0; a < regions.length; a++){
+                    console.log(regions)
+                    add = document.createElement("li");
+                    add.innerHTML = regions[a];
+                    document.getElementById('list').appendChild(add);
+                }
+            }else {
+                add = document.createElement("li");
+                add.innerHTML = "Topilmadi..."
+                document.getElementById('list').appendChild(add);
+                break
+            }
+        }
+    }
+
+
+
+</script>
+</html>

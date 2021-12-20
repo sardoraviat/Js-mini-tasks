@@ -1,0 +1,31 @@
+.bg-info{
+
+    margin: 0 auto;
+    width: 100px;
+    height: 260px;
+    border-radius: 10px;
+}
+.center{
+    margin: 0 auto;
+
+}
+.circle{
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 3px 0;
+    box-shadow: 0 0 25px darkgreen;
+}
+
+
+
+#red{
+    background-color: #212020;
+}
+#green{
+    background-color: #212020;
+}
+#yellow{
+    background-color: #212020;
+}

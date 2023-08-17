@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massivga yangi object qo'shish</title>
+</head>
+<body>
+   
+
+<script>
+
+
+
+while(true){
+
+    var account = []
+    var newUsername = prompt("Enter your first and last name:")
+     var newAccount = {username: newUsername}
+  newAccount.password = prompt("Enter a new password:")
+ 
+  account.push(newAccount)
+
+  var againAdd = prompt("Yana obyekt qo'shmoqchimisz? Ha/Yo'q").toLowerCase(); 
+
+  while (againAdd.length < 2 && againAdd > 3) {
+    againAdd = prompt("Siz bir elementdan ko'p ma'lumot kiritayassiz.Yangi obyekt yaratasizmi? Ha/Yo'q").toLowerCase();
+  };
+
+  if(againAdd === "ha"){
+    alert("Yangi obyekt yaratish yakunlandi")
+    break;
+  }
+
+  else if(againAdd === "yo'q"){
+    continue;
+  }
+
+console.log(account)
+  }
+
+
+
+      
+    </script>  
+</body>
+</html>

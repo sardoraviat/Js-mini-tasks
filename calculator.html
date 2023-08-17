@@ -56,11 +56,10 @@
         if (e.key === 'Enter'){
             ekran.value = eval(ekran.value);
         }
-        else {input.value += e.key}
-
-        if (e.key == 'Backspace'){
+        else if (e.key === 'Backspace'){
             ekran.value = ekran.value.slice(0, -1);
         }
+        else {input.value += e.key}
     });
 
 

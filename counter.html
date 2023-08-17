@@ -35,16 +35,22 @@
         }
          return color;
     }
-    counterPlus.addEventListener("click", function () {
+    counterPlus.addEventListener("click", 
+    
+    function plus() {
       number++;
       counterPlaceholder.innerHTML = number;
       counterPlaceholder.style.color = changeColor()
         
-    });
-    counterMinus.addEventListener("click",function (){
+    }
+    
+    );
+    counterMinus.addEventListener("click",
+    function minus(){
         number--;
         counterPlaceholder.innerHTML = number;
         counterPlaceholder.style.color = changeColor()
-    });
+    }
+    );
 </script>
 </html>
